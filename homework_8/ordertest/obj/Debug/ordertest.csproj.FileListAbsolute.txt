@@ -1,0 +1,7 @@
+E:\personal\projects\CSharpHomework\homework_8\ordertest\bin\Debug\ordertest.exe.config
+E:\personal\projects\CSharpHomework\homework_8\ordertest\bin\Debug\ordertest.exe
+E:\personal\projects\CSharpHomework\homework_8\ordertest\bin\Debug\ordertest.pdb
+E:\personal\projects\CSharpHomework\homework_8\ordertest\obj\Debug\ordertest.csprojResolveAssemblyReference.cache
+E:\personal\projects\CSharpHomework\homework_8\ordertest\obj\Debug\ordertest.csproj.CoreCompileInputs.cache
+E:\personal\projects\CSharpHomework\homework_8\ordertest\obj\Debug\ordertest.exe
+E:\personal\projects\CSharpHomework\homework_8\ordertest\obj\Debug\ordertest.pdb

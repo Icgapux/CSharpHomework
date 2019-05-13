@@ -1,0 +1,14 @@
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.csprojResolveAssemblyReference.cache
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.Properties.Resources.resources
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.csproj.GenerateResource.Cache
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.csproj.CoreCompileInputs.cache
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\bin\Debug\orderGraphis.exe.config
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\bin\Debug\orderGraphis.exe
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\bin\Debug\orderGraphis.pdb
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\bin\Debug\ordertest.exe
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\bin\Debug\ordertest.pdb
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\bin\Debug\ordertest.exe.config
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.exe
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.pdb
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.FormMain.resources
+E:\personal\projects\CSharpHomework\homework_8\orderGraphis\obj\Debug\orderGraphis.FormEdit.resources
