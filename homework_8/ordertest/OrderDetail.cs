@@ -44,22 +44,21 @@ namespace ordertest {
         public uint Quantity { get; set; }
 
 		public double Price {
-			get => Goods.Price * Quantity;
+			get => Goods == null? 0 : Goods.Price * Quantity;
 		}
 
         public override bool Equals(object obj) {
             var detail = obj as OrderDetail;
-            return detail != null &&
-                Goods.Id == detail.Goods.Id &&
-                Quantity == detail.Quantity;
+            return detail != null && EqualityComparer<Goods>.Default.Equals(Goods, detail.Goods);
         }
 
         public override int GetHashCode() {
-            var hashCode = 1522631281;
-            hashCode = hashCode * -1521134295 + Goods.Name.GetHashCode();
-            hashCode = hashCode * -1521134295 + Quantity.GetHashCode();
-            return hashCode;
-        }
+			//var hashCode = 1522631281;
+			//hashCode = hashCode * -1521134295 + Goods.Name.GetHashCode();
+			//hashCode = hashCode * -1521134295 + Quantity.GetHashCode();
+			//return hashCode;
+			return 1522631281 + EqualityComparer<Goods>.Default.GetHashCode(Goods);
+		}
 
         /// <summary>
         /// override ToString

@@ -69,7 +69,7 @@ namespace orderGraphis {
 
 		private void comboBox3_SelectedIndexChanged(object sender, EventArgs e) {
 			((Order)orderBindingSource.Current).Customer = (Customer)comboBox3.SelectedItem;
-			orderBindingSource.ResetBindings(false);
+			detailsBindingSource.ResetBindings(false);
 		}
 
 		private void textBox2_TextChanged(object sender, EventArgs e) {

@@ -30,9 +30,6 @@ namespace orderGraphis {
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.goodsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.detailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +50,9 @@ namespace orderGraphis {
 			this.button2 = new System.Windows.Forms.Button();
 			this.comboBox3 = new System.Windows.Forms.ComboBox();
 			this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.goodsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.detailsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
@@ -77,6 +77,7 @@ namespace orderGraphis {
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(333, 21);
 			this.textBox1.TabIndex = 3;
+			this.textBox1.DataBindings.Add("Text", orderBindingSource, "Id");
 			// 
 			// label2
 			// 
@@ -99,27 +100,8 @@ namespace orderGraphis {
 			this.dataGridView1.Location = new System.Drawing.Point(23, 131);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 23;
-			this.dataGridView1.Size = new System.Drawing.Size(435, 184);
+			this.dataGridView1.Size = new System.Drawing.Size(571, 184);
 			this.dataGridView1.TabIndex = 6;
-			// 
-			// goodsDataGridViewTextBoxColumn
-			// 
-			this.goodsDataGridViewTextBoxColumn.DataPropertyName = "Goods";
-			this.goodsDataGridViewTextBoxColumn.HeaderText = "货物";
-			this.goodsDataGridViewTextBoxColumn.Name = "goodsDataGridViewTextBoxColumn";
-			// 
-			// quantityDataGridViewTextBoxColumn
-			// 
-			this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-			this.quantityDataGridViewTextBoxColumn.HeaderText = "数量";
-			this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-			// 
-			// priceDataGridViewTextBoxColumn
-			// 
-			this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-			this.priceDataGridViewTextBoxColumn.HeaderText = "价格";
-			this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-			this.priceDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
 			// detailsBindingSource
 			// 
@@ -185,7 +167,7 @@ namespace orderGraphis {
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
 			this.tableLayoutPanel1.Controls.Add(this.comboBox1, 2, 0);
 			this.tableLayoutPanel1.Controls.Add(this.label6, 1, 0);
 			this.tableLayoutPanel1.Controls.Add(this.label7, 3, 0);
@@ -203,7 +185,7 @@ namespace orderGraphis {
 			// 
 			this.comboBox1.DataSource = this.goodsBindingSource;
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(95, 3);
+			this.comboBox1.Location = new System.Drawing.Point(91, 3);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(95, 20);
 			this.comboBox1.TabIndex = 1;
@@ -217,9 +199,9 @@ namespace orderGraphis {
 			// 
 			this.label6.AutoSize = true;
 			this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label6.Location = new System.Drawing.Point(53, 0);
+			this.label6.Location = new System.Drawing.Point(51, 0);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(36, 24);
+			this.label6.Size = new System.Drawing.Size(34, 24);
 			this.label6.TabIndex = 0;
 			this.label6.Text = "货物";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -228,7 +210,7 @@ namespace orderGraphis {
 			// 
 			this.label7.AutoSize = true;
 			this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label7.Location = new System.Drawing.Point(196, 0);
+			this.label7.Location = new System.Drawing.Point(192, 0);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(37, 24);
 			this.label7.TabIndex = 2;
@@ -239,7 +221,7 @@ namespace orderGraphis {
 			// 
 			this.label8.AutoSize = true;
 			this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label8.Location = new System.Drawing.Point(376, 0);
+			this.label8.Location = new System.Drawing.Point(372, 0);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(39, 24);
 			this.label8.TabIndex = 4;
@@ -249,17 +231,19 @@ namespace orderGraphis {
 			// label9
 			// 
 			this.label9.AutoSize = true;
+			this.label9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.detailsBindingSource, "Price", true));
 			this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label9.Location = new System.Drawing.Point(421, 0);
+			this.label9.Location = new System.Drawing.Point(417, 0);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(92, 24);
+			this.label9.Size = new System.Drawing.Size(96, 24);
 			this.label9.TabIndex = 5;
 			this.label9.Text = "0";
 			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// textBox2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(239, 3);
+			this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.detailsBindingSource, "Quantity", true));
+			this.textBox2.Location = new System.Drawing.Point(235, 3);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(74, 21);
 			this.textBox2.TabIndex = 6;
@@ -299,6 +283,26 @@ namespace orderGraphis {
 			// 
 			this.customerBindingSource.DataSource = typeof(ordertest.Customer);
 			// 
+			// goodsDataGridViewTextBoxColumn
+			// 
+			this.goodsDataGridViewTextBoxColumn.DataPropertyName = "Goods";
+			this.goodsDataGridViewTextBoxColumn.HeaderText = "货物";
+			this.goodsDataGridViewTextBoxColumn.Name = "goodsDataGridViewTextBoxColumn";
+			this.goodsDataGridViewTextBoxColumn.Width = 200;
+			// 
+			// quantityDataGridViewTextBoxColumn
+			// 
+			this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+			this.quantityDataGridViewTextBoxColumn.HeaderText = "数量";
+			this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+			// 
+			// priceDataGridViewTextBoxColumn
+			// 
+			this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+			this.priceDataGridViewTextBoxColumn.HeaderText = "价格";
+			this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+			this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
 			// FormEdit
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -315,7 +319,7 @@ namespace orderGraphis {
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label1);
 			this.Name = "FormEdit";
-			this.Text = "FormEdit";
+			this.Text = "添加或修改订单";
 			this.Load += new System.EventHandler(this.FormEdit_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.detailsBindingSource)).EndInit();
@@ -353,9 +357,9 @@ namespace orderGraphis {
 		private BindingSource customerBindingSource;
 		private BindingSource goodsBindingSource;
 		private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+		private TextBox textBox2;
 		private DataGridViewTextBoxColumn goodsDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
 		private DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-		private TextBox textBox2;
 	}
 }
